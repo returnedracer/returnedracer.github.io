@@ -1,0 +1,452 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+
+#outer_wrapper{
+	overflow: scroll;
+	width: 100%;
+}
+#outer_wrapper #inner_wrapper {
+    width:6000px; /* If you have more elements, increase the width accordingly */
+}
+#outer_wrapper #inner_wrapper div.box { /* Define the properties of inner block */
+    width: 350px;
+    height:300px;
+    float: left;
+    margin: 0 4px 0 0;
+    border:1px grey solid;
+}
+
+.tabs {
+  position: relative;   
+  min-height: 500px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content{
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+</style>
+
+
+</head>
+
+<body>
+<div class="tabs">
+    
+   <div class="tab">
+       <input type="radio" id="tab-1" name="tab-group-1" checked>
+       <label for="tab-1">Novice</label>        
+       <div class="content">
+           <div id="outer_wrapper">
+    			<div id="inner_wrapper">
+
+       			<!-- more boxes here -->
+				<div class="box">
+            	<!-- Add desired content here -->
+           		<p> Crossway 10-V </p> 
+    			<img src="../dashboard/images/Urban-bikes/Entry/Crossway 10V.png" width="350" height="300" alt=""/>
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+        		</div>
+        		<div class="box">
+             	<!-- Add desired content here -->
+             	<p> Crossway 15-MD </p>
+    			<img src="../dashboard/images/Urban-bikes/Entry/Crossway 15MD.png" width="350" height="300" alt=""/>
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+            	</div>
+        		<div class="box">
+            	<!-- Add desired content here -->
+            	<p> Crossway 20-D </p>
+    			<img src="../dashboard/images/Urban-bikes/Entry/Crossway 20D-Ladies.png" width="350" height="300" alt=""/>
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+      			</div>       
+				<div class="box">
+            	<!-- Add desired content here -->
+            	<p> Crossway 40-L </p>
+    			<img src="../dashboard/images/Urban-bikes/Entry/Urban 40-Ladies.png" width="350" height="300" alt=""/>
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+      			</div> 
+ 			</div>
+		</div>
+        <p></p><p></p>
+        <table id="urbanNovice" border="0" cellpadding="0" cellspacing="0" width="720">
+	    <col width="64">
+	    <col width="144">
+	    <col width="64" span="8">
+	    <tr>
+	      <td width="64"></td>
+	      <td width="144"></td>
+	      <td width="64"></td>
+	      <td width="64"></td>
+	      <td width="64"></td>
+	      <td width="64"></td>
+	      <td width="64"></td>
+	      <td width="64"></td>
+	      <td width="64"></td>
+	      <td width="64"></td>
+        </tr>
+	    <tr>
+	      <th></th>
+	      <th>Model</th>
+	      <th colspan="2">Frame Sizes</th>
+	      <th></th>
+	      <th></th>
+	      <th></th>
+	      <th></th>
+	      <th></th>
+	      <th></th>
+        </tr>
+	    <tr>
+	      <td></td>
+	      <td>Crossway 10-V</td>
+	      <td>41cm</td>
+	      <td>44cm</td>
+	      <td>46cm</td>
+	      <td>48cm</td>
+	      <td>52cm</td>
+	      <td>55cm</td>
+	      <td>58cm</td>
+	      <td>61cm</td>
+        </tr>
+	    <tr>
+	      <td></td>
+	      <td>Crossway 15-MD</td>
+	      <td>41cm</td>
+	      <td>44cm</td>
+	      <td>46cm</td>
+	      <td>48cm</td>
+	      <td>52cm</td>
+	      <td>55cm</td>
+	      <td>58cm</td>
+	      <td>61cm</td>
+        </tr>
+	    <tr>
+	      <td></td>
+	      <td>Crossway 20-D</td>
+	      <td>41cm</td>
+	      <td>44cm</td>
+	      <td>46cm</td>
+	      <td>48cm</td>
+	      <td>52cm</td>
+	      <td>55cm</td>
+	      <td>58cm</td>
+	      <td>61cm</td>
+        </tr>
+	    <tr>
+	      <td></td>
+	      <td>Crosswy 40-D L</td>
+	      <td>41cm</td>
+	      <td>44cm</td>
+	      <td>46cm</td>
+	      <td>48cm</td>
+	      <td>52cm</td>
+	      <td>55cm</td>
+	      <td>58cm</td>
+	      <td>61cm</td>
+        </tr>
+      </table>
+      </div> 
+   </div>
+    
+   <div class="tab">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2">Intermediate</label>
+		<div class="content">
+           <div id="outer_wrapper">
+    			<div id="inner_wrapper">
+
+       			<!-- more boxes here -->
+				<div class="box">
+            	<!-- Add desired content here -->
+           		<p>Crossway 300 </p>
+    			<img src="../dashboard/images/Urban-bikes/Mid-range/Crossway 300.png" width="350" height="300" alt=""/>
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+        		</div>
+        		<div class="box">
+             	<!-- Add desired content here -->
+             	<p> Crossway 500 </p>
+    			<img src="../dashboard/images/Urban-bikes/Mid-range/Crossway 500.png" width="350" height="300" alt=""/>
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+            	</div>
+        		<div class="box">
+            	<!-- Add desired content here -->
+            	<p> Crossway 600 </p>
+    			<img src="../dashboard/images/Urban-bikes/Mid-range/Crossway 600.png" width="350" height="300" alt=""/>
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+      			</div>       
+				<div class="box">
+            	<!-- Add desired content here -->
+            	<p> Crossway 900 </p>
+    			<img src="../dashboard/images/Urban-bikes/Mid-range/Crossway 900.png" width="350" height="300" alt=""/> 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+      			</div> 
+ 			</div>
+		</div>
+        <p></p><p></p>
+        <table border="0" cellpadding="0" cellspacing="0" width="720">
+    	  <col width="64">
+    	  <col width="144">
+    	  <col width="64" span="8">
+    	  <tr>
+    	    <td width="64"></td>
+    	    <td width="144"></td>
+    	    <td width="64"></td>
+    	    <td width="64"></td>
+    	    <td width="64"></td>
+    	    <td width="64"></td>
+    	    <td width="64"></td>
+    	    <td width="64"></td>
+    	    <td width="64"></td>
+    	    <td width="64"></td>
+  	    </tr>
+    	  <tr>
+    	    <th></th>
+    	    <th style="font-weight: bolder">Model</th>
+    	    <th colspan="2" style="font-weight: bolder">Frame Sizes</th>
+    	    <th></th>
+    	    <th></th>
+    	    <th></th>
+    	    <th></th>
+    	    <th></th>
+    	    <th></th>
+  	    </tr>
+    	  <tr>
+    	    <td></td>
+    	    <td>Crossway 300</td>
+    	    <td>41cm</td>
+    	    <td>44cm</td>
+    	    <td>46cm</td>
+    	    <td>48cm</td>
+    	    <td>52cm</td>
+    	    <td>55cm</td>
+    	    <td>58cm</td>
+    	    <td>61cm</td>
+  	    </tr>
+    	  <tr>
+    	    <td></td>
+    	    <td>Crossway 500</td>
+    	    <td>41cm</td>
+    	    <td>44cm</td>
+    	    <td>46cm</td>
+    	    <td>48cm</td>
+    	    <td>52cm</td>
+    	    <td>55cm</td>
+    	    <td>58cm</td>
+    	    <td>61cm</td>
+  	    </tr>
+    	  <tr>
+    	    <td></td>
+    	    <td>Crossway 600</td>
+    	    <td>41cm</td>
+    	    <td>44cm</td>
+    	    <td>46cm</td>
+    	    <td>48cm</td>
+    	    <td>52cm</td>
+    	    <td>55cm</td>
+    	    <td>58cm</td>
+    	    <td>61cm</td>
+  	    </tr>
+    	  <tr>
+    	    <td></td>
+    	    <td>Crosswy 900</td>
+    	    <td>41cm</td>
+    	    <td>44cm</td>
+    	    <td>46cm</td>
+    	    <td>48cm</td>
+    	    <td>52cm</td>
+    	    <td>55cm</td>
+    	    <td>58cm</td>
+    	    <td>61cm</td>
+  	    </tr>
+  	  </table>
+       </div> 
+   </div>
+    
+    <div class="tab">
+       <input type="radio" id="tab-3" name="tab-group-1">
+       <label for="tab-3">Advanced</label>
+     
+       <div class="content">
+           <div id="outer_wrapper">
+    			<div id="inner_wrapper">
+
+       			<!-- more boxes here -->
+				<div class="box">
+            	<!-- Add desired content here -->
+           		<p>Crossway 7000 </p>
+    			<img src="../dashboard/images/Urban-bikes/Hi-spec/Crossway Urban 7000.png" width="350" height="300" alt=""/>
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+        		</div>
+        		<div class="box">
+             	<!-- Add desired content here -->
+             	<p> Crossway XT-L </p>
+    			<img src="../dashboard/images/Urban-bikes/Hi-spec/Crossway Urban XT-L.png" width="350" height="300" alt=""/>
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+            	</div>
+        		<div class="box">
+            	<!-- Add desired content here -->
+            	<p> Crossway XT </p>
+    			<img src="../dashboard/images/Urban-bikes/Hi-spec/Crossway Urban XT.png" width="350" height="300" alt=""/>
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+                <br> Merida specs 1 
+      			</div>       	
+ 			</div>
+		</div>
+        <p></p><p></p>
+        <table border="0" cellpadding="0" cellspacing="0" width="1099">
+   	    <col width="64">
+   	    <col width="144">
+   	    <col width="59">
+   	    <col width="64" span="13">
+   	    <tr>
+   	      <td width="64"></td>
+   	      <td width="144"></td>
+   	      <td width="59"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+   	      <td width="64"></td>
+        </tr>
+   	    <tr>
+   	      <th></th>
+   	      <th>Model</th>
+   	      <th></th>
+   	      <th colspan="2">Frame Sizes</th>
+   	      <th></th>
+   	      <th></th>
+   	      <th></th>
+   	      <th></th>
+   	      <th></th>
+   	      <th></th>
+   	      <th></th>
+   	      <th></th>
+   	      <th></th>
+   	      <th></th>
+   	      <th></th>
+        </tr>
+   	    <tr>
+   	      <td></td>
+   	      <td>Crossway 7000</td>
+   	      <td></td>
+   	      <td></td>
+   	      <td></td>
+   	      <td></td>
+   	      <td>47cm</td>
+   	      <td></td>
+   	      <td>50cm</td>
+   	      <td></td>
+   	      <td>53cm</td>
+   	      <td></td>
+   	      <td>56cm</td>
+   	      <td></td>
+   	      <td>59cm</td>
+   	      <td></td>
+        </tr>
+   	    <tr>
+   	      <td></td>
+   	      <td>Crossway XT-E-Lady</td>
+   	      <td></td>
+   	      <td>41cm</td>
+   	      <td>44cm</td>
+   	      <td>46cm</td>
+   	      <td></td>
+   	      <td>48cm</td>
+   	      <td></td>
+   	      <td>52cm</td>
+   	      <td></td>
+   	      <td>55cm</td>
+   	      <td></td>
+   	      <td>58cm</td>
+   	      <td></td>
+   	      <td>61cm</td>
+        </tr>
+   	    <tr>
+   	      <td></td>
+   	      <td>Crossway XT-E-Lady</td>
+   	      <td></td>
+   	      <td>41cm</td>
+   	      <td>44cm</td>
+   	      <td>46cm</td>
+   	      <td></td>
+   	      <td>48cm</td>
+   	      <td></td>
+   	      <td>52cm</td>
+   	      <td></td>
+   	      <td>55cm</td>
+   	      <td></td>
+   	      <td>58cm</td>
+   	      <td></td>
+   	      <td>61cm</td>
+        </tr>
+      </table>
+       </div> 
+   </div>
+    
+</div>
+
+
+
+</body>
+</html>

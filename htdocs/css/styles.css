@@ -1,0 +1,91 @@
+@charset "utf-8";
+body {
+	background-color: #FFDB47;
+	width: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 450px;
+}
+body {
+	width: 1120px;
+}
+
+#content #sections table {
+}
+
+
+#urban {
+	float: left;
+	margin-left: 40px;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+#content {
+	height: 200px;
+	width: 520px;
+	background-color: #EEEEE0;
+
+}
+
+#mountain  {
+	background-image: url(../dashboard/images/homepage/mountain-home.png);
+	background-color: #D7AFB0;
+	padding-bottom: 30px;
+}
+#roadracing {
+	padding-bottom: 30px;
+}
+
+
+#urban,#mountain  , #roadracing{
+	height: 280px;
+	width: 280px;
+	float: left;
+	margin-left: 45px;
+	background-color: #F6F7F3;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+}
+
+#sections {
+	background-color: #F4EDE6;
+	height: 390px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	margin-left: 20px;
+	margin-top: 40px;
+	width: 1120px;
+	margin-right: 20px;
+}
+#content-urban {
+	height: 150px;
+}
+
+#footer {
+	height: 208px;
+	background-image: url(../dashboard/images/homepage/footer.png);
+	background-color: #FFDB47;
+	margin-top: 40px;
+	/* [disabled]float: left; */
+	opacity: 1;
+	text-align: center;
+	color: #AB3200;
+}
+#head {
+	height: 330px;
+}
+#head-home {
+	height: 330px;
+	width: 1120px;
+}
+#head {
+	height: 330px;
+	background-image: url(../dashboard/images/homepage/banner-home.png);
+	white-space: normal;
+	width: 1120px;
+}
+#head-urban {
+	height: 220px;
+}

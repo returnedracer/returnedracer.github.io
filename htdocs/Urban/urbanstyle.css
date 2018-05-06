@@ -1,0 +1,164 @@
+@charset "utf-8";
+#navigation {
+	width: 1020px;
+	height: 45px;
+	float: right;
+	font-weight: 500;
+	font-family: sans-serif;
+	font-size: 1.2em;
+	padding-bottom: 10px;
+}
+#subNavigation {
+	width: 1020px;
+	height: 50px;
+	float: right;
+	padding-right: px;
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 1.2em;
+	background-color: #f4ede6;
+	display: inline;
+	border-style: none;
+	padding-bottom: 20px;
+}
+#subNavigation ul li a:hover {
+	color: #FFDB47;
+	background-color: #8F3200;
+}
+
+
+
+
+
+#content #subNavigation {
+	width: 1020px;
+	height: 100px;
+	display: inline;
+}
+#subNavigation ul {
+	/* [disabled]text-decoration: none; */
+	font-size: medium;
+	list-style-type: none;
+}
+#subNavigation ul li {
+	display: inline;
+	padding-right: 10px;
+}
+
+
+
+#navigation ul li a:link {
+	text-decoration: none;
+	color: #8F3200;
+}
+#navigation ul li a:visited   , #navigation ul li a:active {
+	color: #8F3200;
+}
+#navigation ul li a:hover {
+	color: #FFDB47;
+	background-color: #8F3200;
+}
+
+
+
+
+#navigation ul {
+	list-style-type: none;
+	float: right;
+}
+
+
+
+
+#head {
+	height: 220px;
+}
+#navigation ul li a {
+	padding-right: 10px;
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 0.8em;
+}
+
+
+#navigation ul li {
+	display: inline;
+}
+#content {
+	background-color: #FFDB47;
+	height: 1200px;
+}
+.tab .content #outer_wrapper {
+	background-color: #f4ede6;
+}
+.tabs .tab .content {
+	background-color: #F4EDE6;
+}
+.tabs .tab label {
+	color: #6B0A00;
+	font-family: sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	text-align: right;
+	background-color: #000000;
+}
+
+
+#outer_wrapper{
+	overflow: scroll;
+	width: 100%;
+}
+#outer_wrapper #inner_wrapper {
+	width: 2100px; /* If you have more elements, increase the width accordingly */
+}
+#outer_wrapper #inner_wrapper div.box { /* Define the properties of inner block */
+	width: 350px;
+	height: 300px;
+	float: left;
+	margin: 0 4px 0 0;
+	border: 1px grey solid;
+	background-color: #FFFFFF;
+}
+
+.tabs {
+  position: relative;   
+  min-height: 500px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content{
+	position: absolute;
+	top: 28px;
+	left: 0;
+	background: white;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+#head {
+	height: 220px;
+}
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}

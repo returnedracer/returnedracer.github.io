@@ -6,7 +6,7 @@ body {
 		margin-left: none;
 		margin-right: none;
 	/*	height: 450px;*/
-	height:auto;
+	height:100%;
 	 background-image: url("../dashboard/images/homepage/changes/landing.jpg");
 	 background-size:cover;
 	/*	background-repeat: no-repeat;*/

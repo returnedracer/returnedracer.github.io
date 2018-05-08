@@ -1,19 +1,21 @@
 @charset "utf-8";
 body {
 /*	background-color: #FFDB47;*/
-/*		width: 1120px;*/
-		width:100vh;
+		width: 1120px;
 		margin-left: none;
 		margin-right: none;
-	/*	height: 450px;*/
-	height:100%;
-	 background-image: url("../dashboard/images/homepage/changes/landing.jpg");
-	 background-size:cover;
-	/*	background-repeat: no-repeat;*/
-		display:inline-lock;
+		height: 450px;
+		background-image: url("/dashboard/images/homepage/landing.jpg");
+		background-repeat: no-repeat;
+		display:block;
 }
-
-a,p{
+/* #Adcopy{
+	width:600px;
+	display:inline-block;
+	padding-left:320px;
+	padding-top:100px
+}*/
+a{
 	color:white;
 }
 
@@ -33,8 +35,8 @@ a,p{
 .parent {
 	margin:0px;
 	height :200px;
-  border: 5px solid red;
-/*	width:100%; */
+  border: 5px solid lightcoral;
+	width:100%;
 	display:flex;
 	flex-wrap: wrap;
 	align-content: space-between;
@@ -46,23 +48,20 @@ a,p{
   /*height: 50px;*/
 	width:80%;
   margin: 0px;
- position:relative;
-   border: 5px solid green;
-  top:130px;
-  transform: translateY(-100%);
-	left: 100px;
-	transform:translateX(20%);
+/* position:relative */
+  top:90px
+  transform: translateY(10%);
+	left: 50px;
+	transform:translateX(10%);
 }
 
 .item-2 {
 	margin 0px;
 	width:20%;
-	top:0px
-	position:relative;
-	border: 5px solid pink;
-	transform: translateY(-40%);
-	left: 0px;
-	transform:translateX(530%);
+	top:30px
+	transform: translateY(-90%);
+	left: 30px;
+	transform:translateX(120%);
 }
 
 #urban {
@@ -82,18 +81,20 @@ a,p{
 }
 
 #mountain  {
-/*	background-image: url(../dashboard/images/homepage/mountain-home.png);*/
+	background-image: url(../dashboard/images/homepage/mountain-home.png);
 /*	background-color: #D7AFB0;*/
+
 margin-left: 10px;
 padding-left: 30px;
-padding-top: 50px;
+padding-top: 80px;
 	opacity:0.3;
 	border-radius: 50%
 }
 #roadracing {
+	padding-bottom: 30px;
 	margin-left: 10px;
-	padding-left: 50px;
-	padding-top: 50px;
+	padding-left: 30px;
+	padding-top: 80px;
 	opacity:0.3;
 	border-radius:50%;
 }
@@ -101,7 +102,7 @@ padding-top: 50px;
 
 #urban,#mountain  , #roadracing{
 	height: 280px;
-	width:280px;
+	width: 280px;
 	float: left;
 	margin-left: 45px;
 	background-color: #F6F7F3;
@@ -134,27 +135,6 @@ padding-top: 50px;
 	text-align: center;
 	color: #AB3200;
 }
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
-}
-
-
-
-
-
 /* #head {
 	height: 330px;
 }
